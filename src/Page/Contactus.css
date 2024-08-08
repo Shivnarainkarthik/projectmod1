@@ -1,0 +1,125 @@
+/* Container for the full page */
+.container {
+  min-height: 100vh;
+  min-width: 100%; /* Ensure the container takes at least the full viewport height */
+  background: linear-gradient(rgba(8, 7, 29, 0.8), rgba(8, 7, 29, 0.8)), url('../../public/assets/contact.jpg'); /* Gradient overlay */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Form styling */
+.container form {
+  width: 600px; /* Adjusted width for better responsiveness */
+  max-width: 90%; /* Ensures form is not too wide on small screens */
+  height: auto; /* Changed to auto for flexibility */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px; /* Added padding for spacing */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Border to enhance glassmorphism */
+}
+
+/* Header styling */
+.container form h1 {
+  color: #fff;
+  font-weight: 600; /* Slightly bolder for emphasis */
+  margin-bottom: 20px; /* Adjusted margin for spacing */
+  text-align: center;
+  font-size: 32px; /* Larger font size for the title */
+}
+
+/* Input field styling */
+.container form input, .container form textarea {
+  width: 100%; /* Full width for better alignment */
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 20px; /* Increased margin for spacing */
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid #fff;
+  color: #fff; /* White text color */
+  transition: border-color 0.3s; /* Smooth transition for focus state */
+}
+
+.container form input:focus, .container form textarea:focus {
+  border-bottom: 2px solid #00e676; /* Green accent for focus */
+}
+
+/* Placeholder color for input fields */
+.container form input::placeholder, .container form textarea::placeholder {
+  color: #ccc; /* Light grey for placeholder text */
+}
+
+/* Specific styling for last name and mobile fields */
+.container form #lastName,
+.container form #mobile {
+  margin-left: 0; /* Removed left margin for full width */
+}
+
+/* Subheading styling */
+.container form h4 {
+  color: #ddd;
+  font-weight: 300;
+  margin-top: 20px;
+  text-align: center; /* Centered the text */
+  font-size: 18px; /* Smaller font size for subheading */
+}
+
+/* Textarea styling */
+.container form textarea {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-weight: 200;
+  font-size: 16px;
+  padding: 10px;
+  outline: none;
+  width: 100%; /* Full width for better alignment */
+  min-height: 80px;
+  max-height: 200px;
+  resize: vertical; /* Allow vertical resizing */
+}
+
+/* Custom scrollbar styling for the textarea */
+textarea::-webkit-scrollbar {
+  width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5); /* Lighter color for the scrollbar thumb */
+}
+
+/* Submit button styling */
+.container form #button {
+  border: none;
+  background: linear-gradient(45deg, #00e676, #1de9b6); /* Gradient background */
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #333;
+  width: 100%; /* Full width for better alignment */
+  padding: 15px; /* Added padding for better touch targets */
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow for elevation */
+  cursor: pointer;
+}
+
+.container form #button:hover {
+  background: linear-gradient(45deg, #1de9b6, #00e676); /* Reverse gradient on hover */
+  opacity: 0.9;
+}

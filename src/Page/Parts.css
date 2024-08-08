@@ -1,0 +1,76 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+  gap: 20px; /* Space between cards */
+  padding: 40px; /* Padding around the grid */
+  background-color: #f5f7fa; /* Light background for the grid */
+}
+
+.card {
+  background-color: #ffffff; /* Light background for cards */
+  border: none; /* Remove border */
+  border-radius: 12px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+  cursor: pointer; /* Change cursor on hover */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children */
+  justify-content: flex-start; /* Align items to the top */
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Lift up on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Deepen shadow on hover */
+}
+
+.card img {
+  width: 100%; /* Full width of the card */
+  height: 200px; /* Adjusted height for all images */
+  object-fit: cover; /* Maintain aspect ratio, cover area */
+  border-bottom: 2px solid #eee; /* Subtle separation line */
+}
+
+.card-title {
+  margin: 20px 0 10px; /* Space between image and text */
+  font-size: 1.2em; /* Font size for title */
+  color: #333; /* Dark text color */
+  font-weight: bold; /* Make the text bold */
+  padding: 0 15px; /* Padding for better alignment */
+}
+
+.custom-button{
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+}
+
+.custom-button:hover{
+  background-color: transparent;
+  color: white;
+  border: 2px black solid;
+}
+
+.footer-button{
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+}
+
+.footer-button:hover{
+  background-color: transparent;
+  color: white;
+  border: 2px black solid;
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .card {
+    border-radius: 8px; /* Slightly less rounded corners for smaller screens */
+  }
+}

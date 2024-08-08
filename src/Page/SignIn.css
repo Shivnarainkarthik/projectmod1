@@ -1,0 +1,139 @@
+/* Global styles */
+.sign-in-page {
+  margin: 0;
+  background-image: url("C:\projectReview2\Karthi-2\public\assets\benili2.webp");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden; /* Prevent scrollbars from appearing */
+}
+
+/* Styling for the sign-in text */
+.sign-in-text {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: bold;
+  font-size: 2.5em; /* Increased size for emphasis */
+  color: #000; /* Light color with some transparency */
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better readability */
+}
+
+/* Container for the sign-in box */
+.sign-in-container {
+  background-filter: blur(10 px);
+  padding: 40px;
+  border-radius: 15px;
+  color: #000;
+  text-align: center;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+}
+
+/* Styling for the sign-in heading */
+.sign-in-heading {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: 2.5em; /* Adjusted size for balance */
+  margin-bottom: 20px;
+  text-align: center;
+  color: #000;
+}
+
+/* Styling for labels */
+.sign-in-label {
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+  font-size: 1.1em;
+  padding-left: 10px;
+  color: #000; /* Light color for labels */
+}
+
+/* Styling for input fields */
+.sign-in-input,
+.password-input {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #444; /* Dark border for better contrast */
+  border-radius: 8px; /* More rounded corners */
+  font-size: 1em;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  box-sizing: border-box;
+}
+
+/* Placeholder styling */
+.sign-in-input::placeholder,
+.password-input::placeholder {
+  color: #aaa;
+}
+
+/* Styling for the sign-in button */
+.sign-in-button {
+  width: calc(100% - 20px);
+  padding: 12px;
+  background-color: #ff5722; /* Vibrant color */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.sign-in-button:hover {
+  background-color: #e64a19; /* Slightly darker on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+/* Checkbox container styling */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.checkbox-container input {
+  margin-right: 10px;
+}
+
+/* Create account link styling */
+.create-account {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.create-account a {
+  color: #00bcd4; /* Bright color for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.create-account a:hover {
+  text-decoration: underline;
+  color: #0097a7; /* Darker shade on hover */
+}
+
+/* Policy and terms link styling */
+.policy-link,
+.terms-link {
+  color: #ddd; /* Light color for less emphasis */
+}
